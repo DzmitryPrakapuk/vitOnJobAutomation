@@ -23,3 +23,5 @@ Steps to start working
 
 4. To run tests "npm run protractor"
 
+5. Go to js directory and run git submodule update --init in cmd
+
