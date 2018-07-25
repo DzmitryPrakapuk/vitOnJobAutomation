@@ -21,7 +21,9 @@ Steps to start working
 
 3. Also install protractor and typescript globaly: npm i -g protractor, npm i -g typescript
 
-4. To run tests "npm run protractor"
-
 5. Go to js directory and run git submodule update --init in cmd
+
+6. To run tests go to project directory and "npm run protractor"
+
+
 
