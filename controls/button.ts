@@ -7,6 +7,8 @@ export class ButtonExtend extends  Button{
 
     public static async clickButtonElement(button: ElementFinder, waitElem: ElementFinder){
         await allureStep(`Click on the button '${button}`, async () =>{
+            await w.waitUntilElementIsDisplayed(button);
+            await w.waitUntilElementIsClickable(button);
             await button.click();
             await w.waitUntilElementIsClickable(waitElem);
         });

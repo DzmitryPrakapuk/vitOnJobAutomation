@@ -9,11 +9,9 @@ describe('User disconnected mode', () =>{
 
     beforeEach(async () =>{
         await browser.get('/');
-        await w.waitUntilElementIsClickable(homePageElements.homePageHeader);
-        await w.waitUntilElementIsDisplayed(homePageElements.homePageTost);
+        await w.waitUntilElementIsDisplayed(homePageElements.homePageHeader);
         await w.waitUntilElementNotDisplayed(homePageElements.homePageTost);
-        await w.waitUntilElementIsDisplayed(homePageElements.homePageTost);
-        await w.waitUntilElementNotDisplayed(homePageElements.homePageTost);
+        await w.waitUntilElementNotDisplayed(homePageElements.tostMessage);
     });
 
     it('Testing "Recherche" button C1a', async () =>{
