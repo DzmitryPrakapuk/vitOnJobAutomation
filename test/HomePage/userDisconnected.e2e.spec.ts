@@ -1,17 +1,13 @@
 import {homePageElements} from "../../elements/elements";
-import {browser} from "protractor";
 import {homepage} from "../../testData/homePageInfo";
 import {ButtonExtend} from "../../controls/button";
-import {Waiters as w } from "../../js/core/helper/waiters";
+import {CommonMethods} from "../../businessLogic/commonMethods";
 
 
 describe('User disconnected mode', () =>{
 
     beforeEach(async () =>{
-        await browser.get('/');
-        await w.waitUntilElementIsDisplayed(homePageElements.homePageHeader);
-        await w.waitUntilElementNotDisplayed(homePageElements.homePageTost);
-        await w.waitUntilElementNotDisplayed(homePageElements.tostMessage);
+        await CommonMethods.goToHomePage();
     });
 
     it('Testing "Recherche" button C1a', async () =>{

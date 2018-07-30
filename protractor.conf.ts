@@ -9,13 +9,13 @@ export let config: Config = {
         shardTestFiles: false, //if true will be parallel run
         //maxInstances: 3,
         browserName: 'chrome',
-        /*
+
         chromeOptions: {
             'args': [
                 'disable-infobars=true', //do not show infobar that browser is under automation
                 'safebrowsing-disable-download-protection', //do not show keep or save when you download a file
-                '--headless',// headless mode
-                '--window-size=1920x1080', //screen resolution
+                // '--headless',// headless mode
+                // '--window-size=1920x1080', //screen resolution
             ],
             prefs: {
                 'safebrowsing' : {
@@ -30,7 +30,7 @@ export let config: Config = {
                 },
             }
         }
-        */
+
     },
     seleniumAddress: 'http://127.0.0.1:4444/wd/hub',
 
